@@ -10,10 +10,10 @@ import java.util.*;
 public class Employee
 {
 	//~ Fields ................................................................
-	
+
 	private String name;
 	private double hourlyRate;
-	
+
 	//~ Constructor ...........................................................
 	/**
 	* New Employee object.
@@ -26,10 +26,10 @@ public class Employee
 	   this.name = name;
 	   this.hourlyRate = hourlyRate;
 	}
-	
-	
+
+
 	//~ Methods ...............................................................
-	
+
 	// ----------------------------------------------------------
 	/**
 	* Gets the employee's name.
@@ -39,8 +39,8 @@ public class Employee
 	{
 	   return name;
 	}
-	
-	
+
+
 	// ----------------------------------------------------------
 	/**
 	* Gets the pay rate (per hour).
@@ -50,7 +50,7 @@ public class Employee
 	{
 	   return hourlyRate;
 	}
-	
+
 	// ----------------------------------------------------------
 	/**
 	* Amount paid to the employee for an average 40 hour work week.
@@ -60,7 +60,7 @@ public class Employee
 	{
 	   return hourlyRate * 40;
 	}
-	
+
 	@Override
     public boolean equals(Object obj)
     {
@@ -88,7 +88,7 @@ public class Employee
 	    {
 	        return false; //adding an else statement to ensure method returns a boolean
 	    }
-	    
-	 
+
+
     }
 }
