@@ -55,7 +55,11 @@ private double salaryField;
  */
 public Employee(String firstName, String lastName, double initialSalary)
 {
-	out.println("Constructor not yet implemented");
+	firstNameField = Employee.firstName;
+	lastNameField = Employee.lastName;
+	salaryField = Employee.initialSalary;
+
+	out.println("Constructor has been implemented");
 }
 
 /**
@@ -63,7 +67,7 @@ public Employee(String firstName, String lastName, double initialSalary)
  */
 public void displayValues()
 {
-	out.println("displayValues not yet implemented");
+	out.println("First Name: " + firstName + " Last Name: " + lastName + " Initial Salary: " + initialSalary);
 }
 
 /**
@@ -73,7 +77,7 @@ public void displayValues()
  */
 public String getFirst()
 {
-	return "getFirst not yet implemented";
+	return Employee.firstNameField;
 }
 
 /**
@@ -83,7 +87,8 @@ public String getFirst()
  */
 public void setFirst(String firstName)
 {
-	out.println("setFirst not yet implemented");
+	Employee.firstNameField = firstName;
+	out.println("First Name: " + firstName);
 }
 
 /**
@@ -93,7 +98,7 @@ public void setFirst(String firstName)
  */
 public String getLast()
 {
-	return "getLast not yet implemented";
+	return Employee.lastNameField;
 }
 
 /**
@@ -103,7 +108,8 @@ public String getLast()
  */
 public void setLast(String lastName)
 {
-	out.println("setLast not yet implemented");
+	Employee.lastNameField = lastName;
+	out.println("Last Name: " + lastName);
 }
 
 /**
@@ -113,8 +119,8 @@ public void setLast(String lastName)
  */
 public double getMonthlySalary()
 {
-	out.println("getMonthlySalary not yet implemented");
-	return Double.MIN_VALUE;
+	return Employee.salaryField/12;
+	out.println("getMonthlySalary has been implemented: " + Employee.salaryField/12);
 }
 
 /**
@@ -124,7 +130,8 @@ public double getMonthlySalary()
  */
 public void setMonthlySalary(double salary)
 {
-	out.println("setMonthlySalary not yet implemented");
+	Employee.salaryField/12 = salary
+	out.println("setMonthlySalary has been implemented: " + salary);
 }
 
 /**
